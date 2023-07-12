@@ -1,9 +1,14 @@
 <div class='container mt-5'>
-  <% @restaurants.each do |restaurant| %>
-    <div class="card-product">
-      <div class="card-product-infos">
-        <h2><%= restaurant.name %></h2>
-      </div>
+  <div class='row justify-content-center'>
+    <div class='col-6'>
+      <h1 class='text-center mb-4 text-secondary'>Local Restaurants</h1>
+      <% @restaurants.each do |restaurant| %>
+        <div class="card-product mb-3 rounded" style='background: #dad7cd'>
+          <div class="card-product-infos">
+            <h2 class='ps-5'><%= link_to restaurant.name, restaurant_path(restaurant), class: 'link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover' %></h2>
+          </div>
+        </div>
+      <% end %>
     </div>
-  <% end %>
+  </div>
 </div>
