@@ -1,0 +1,15 @@
+<div class='container mt-5'>
+  <div class='row justify-content-center'>
+    <div class='col-6'>
+      <h1 class='text-center mb-4 text-secondary'><%= @restaurant.name %> Restaurant 🍝</h1>
+        <div class="card-product mb-3 rounded" style='background: #dad7cd'>
+          <div class="card-product-infos mx-auto">
+            <h2 class='mb-2'><i class="fa-solid fa-location-dot me-3"></i> <%= @restaurant.address.upcase %></h2>
+            <h2 class='mb-2'><i class="fa-solid fa-phone me-3"></i> <%= @restaurant.phone_number %></h2>
+            <h2 class='mb-2'><i class="fa-solid fa-utensils me-3"></i> <%= @restaurant.category.upcase %></h2>
+          </div>
+        </div>
+          <%= link_to 'all restaurants', restaurants_path, class: 'link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover' %>
+    </div>
+  </div>
+</div>
