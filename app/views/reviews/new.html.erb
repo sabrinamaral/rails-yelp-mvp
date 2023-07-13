@@ -1,0 +1,9 @@
+<div class='container mt-5'>
+  <div class='row justify-content-center'>
+    <div class='col-6'>
+      <h1 class='text-center mb-4 text-secondary'>New Review</h1>
+      <%= render 'form', restaurant: @restaurant, review: @review %>
+      <%= link_to "Back to Restaurant #{@restaurant.name}", restaurant_path(@restaurant), class: 'btn btn-outline-secondary btn-sm mt-4'%>
+    </div>
+  </div>
+</div>
