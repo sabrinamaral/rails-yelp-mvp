@@ -1,7 +1,11 @@
 <div class='container mt-5'>
   <div class='row justify-content-center'>
     <div class='col-6'>
-      <h1 class='text-center mb-4 text-secondary'>Local Restaurants</h1>
+      <h1 class='text-center mb-4 text-secondary'>Local Restaurants
+        <%= link_to new_restaurant_path, class: 'text-secondary btn-lg' do %>
+          <i class="fa-solid fa-circle-plus"></i>
+        <% end %>
+      </h1>
       <% @restaurants.each do |restaurant| %>
         <div class="card-product mb-3 rounded" style='background: #dad7cd'>
           <div class="card-product-infos">
