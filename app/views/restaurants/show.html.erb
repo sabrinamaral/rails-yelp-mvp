@@ -1,6 +1,6 @@
-<div class='container mt-5'>
+<div class='container my-4'>
   <div class='row justify-content-center'>
-    <div class='col-6'>
+    <div class='col-7'>
       <h1 class='text-center mb-4 text-secondary'><%= @restaurant.name %> Restaurant 🍝</h1>
         <div class="card-product mb-3 rounded" style='background: #dad7cd'>
           <div class="card-product-infos ms-5">
@@ -18,7 +18,6 @@
           </div>
         <% end %>
         <%= render 'reviews/form', restaurant: @restaurant, review: @review %>
-        <%= link_to 'all restaurants', restaurants_path, class: 'btn btn-outline-secondary btn-sm' %>
     </div>
   </div>
 </div>

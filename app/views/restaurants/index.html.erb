@@ -1,15 +1,11 @@
 <div class='container mt-5'>
   <div class='row justify-content-center'>
     <div class='col-6'>
-      <h1 class='text-center mb-4 text-secondary'>Local Restaurants
-        <%= link_to new_restaurant_path, class: 'text-secondary btn-lg' do %>
-          <i class="fa-solid fa-circle-plus"></i>
-        <% end %>
-      </h1>
+      <h1 class='text-center mb-4 text-secondary'>Local Restaurants 👩🏻‍🍳</h1>
       <% @restaurants.each do |restaurant| %>
-        <div class="card-product mb-3 rounded" style='background: #dad7cd'>
+        <div class="card-product mb-3 rounded" style='background: #bfc4ac'>
           <div class="card-product-infos">
-            <h2 class='ps-5'><%= link_to restaurant.name, restaurant_path(restaurant), class: 'link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover' %></h2>
+            <h2 class='ps-5'><%= link_to restaurant.name, restaurant_path(restaurant), class: 'link-secondary link-offset-2' %></h2>
           </div>
         </div>
       <% end %>
